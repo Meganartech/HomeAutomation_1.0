@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeManagementActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorAccent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+
+            android:id="@+id/home_management_cp"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/white">
+
+        </ImageView>
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginLeft="35dp"
+
+
+            android:filterTouchesWhenObscured="true"
+            android:text="Add Rooms"
+
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+
+            android:id="@+id/add_home_management"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_add_circle_outline_24"
+            app:tint="@color/black">
+
+        </ImageView>
+
+    </RelativeLayout>
+
+
+    <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+        android:id="@+id/spinneraddrooms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="?colorAccent"
+        app:smsp_arrowColor="@color/black"
+        app:smsp_highlightColor="@color/black"
+        app:smsp_hintSize="18sp"
+        app:smsp_itemColor="@color/black"
+        app:smsp_itemListBackgroundColor="@color/white"
+        app:smsp_itemListColor="@color/black"
+        app:smsp_itemListHintBackgroundColor="@color/white"
+        app:smsp_itemSize="22sp"
+        app:smsp_selectedItemListColor="@color/cardview_dark_background"
+
+        />
+
+    <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+        android:id="@+id/no_ports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinneraddrooms"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="?colorAccent"
+        app:smsp_arrowColor="@color/black"
+        app:smsp_highlightColor="@color/black"
+        app:smsp_hintSize="18sp"
+        app:smsp_itemColor="@color/black"
+        app:smsp_itemListBackgroundColor="@color/white"
+        app:smsp_itemListColor="@color/black"
+        app:smsp_itemListHintBackgroundColor="@color/white"
+        app:smsp_itemSize="22sp"
+        app:smsp_selectedItemListColor="@color/cardview_dark_background"
+
+        />
+
+
+    <Button
+        android:id="@+id/create_btn"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no_ports"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/roundconer"
+        android:backgroundTint="?colorAccent"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="238dp">
+
+        <ListView
+            android:id="@+id/homelist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/create_btn"
+            android:layout_marginTop="80dp">
+
+        </ListView>
+    </ScrollView>
+</RelativeLayout>

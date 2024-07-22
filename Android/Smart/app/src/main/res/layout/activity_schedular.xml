@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meganar.smart.SchedularActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="?colorAccent"
+            android:padding="16dp">
+            <ImageView
+                android:id="@+id/sechedularback"
+                android:layout_width="25dp"
+                android:layout_height="28dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/white">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Schedular"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+
+        </RelativeLayout>
+    <!--port1-->
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/pc1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="70dp"
+            app:cardCornerRadius="15dp"
+            app:backgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:showText="true"
+                            android:textAlignment="center"
+                            android:textColor="?colorAccent"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            app:backgroundColor="@color/white"
+                            app:cardCornerRadius="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:drawablePadding="10dp"
+                                    android:gravity="center"
+                                    android:showText="true"
+                                    android:text="Select Days"
+                                    android:textColor="?colorAccent"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"/>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </TableRow>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:stretchColumns="0,1">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                app:backgroundColor="@color/white"
+                                app:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:drawablePadding="10dp"
+                                        android:textSize="15dp"
+                                        android:gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:showText="true"
+                                        android:text="Start Time"
+                                        android:textColor="?colorAccent" />
+
+                                    <TextView
+                                        android:id="@+id/startTime1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="15dp"
+                                        android:background="@color/white"
+                                        android:drawableRight="@drawable/ic_baseline_edit_24"
+                                        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                        android:drawablePadding="10dp"
+
+                                        android:gravity="center|start"
+                                        android:showText="true"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                app:backgroundColor="@color/white"
+                                app:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:drawablePadding="10dp"
+                                        android:gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:showText="true"
+                                        android:text="Stop Time"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="15dp" />
+
+                                    <TextView
+                                        android:id="@+id/stopTime1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="15dp"
+                                        android:background="@color/white"
+                                        android:drawableRight="@drawable/ic_baseline_edit_24"
+                                        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                        android:drawablePadding="10dp"
+                                        android:gravity="center|start"
+                                        android:showText="true"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </TableRow>
+                    </TableLayout>
+
+                </TableLayout>
+
+
+                    <Button
+                        android:id="@+id/buttonUp1"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:text="update"
+                        android:layout_gravity="center"
+                        android:backgroundTint="?colorAccent"
+                        android:textColor="@color/white"
+                        android:background="@drawable/roundconer"
+                        android:textStyle="bold"
+                       />
+                </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    <!--port 2-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pc2"
+            android:layout_below="@+id/pc1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="15dp"
+            app:backgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:drawablePadding="5dp"
+
+                            android:gravity="center"
+                            android:showText="true"
+
+                            android:textAlignment="center"
+                            android:textColor="?colorAccent"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            app:backgroundColor="@color/white"
+                            app:cardCornerRadius="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:drawablePadding="10dp"
+                                    android:gravity="center"
+                                    android:showText="true"
+                                    android:text="Select Days"
+                                    android:textColor="?colorAccent"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"/>
+
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </TableRow>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:stretchColumns="0,1">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="4dp"
+                                app:backgroundColor="@color/white"
+                                app:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:drawablePadding="10dp"
+
+                                        android:gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:showText="true"
+                                        android:text="Start Time:"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="15dp"/>
+
+                                    <TextView
+                                        android:id="@+id/startTime2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="15dp"
+                                        android:background="@color/white"
+                                        android:drawableRight="@drawable/ic_baseline_edit_24"
+                                        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                        android:drawablePadding="10dp"
+
+                                        android:gravity="center|start"
+                                        android:showText="true"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                app:backgroundColor="@color/white"
+                                app:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+>
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:drawablePadding="10dp"
+
+                                        android:gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:showText="true"
+                                        android:text="Stop Time:"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="15dp"
+                                         />
+
+                                    <TextView
+                                        android:id="@+id/stopTime2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="15dp"
+                                        android:background="@color/white"
+                                        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                        android:drawablePadding="10dp"
+                                        android:drawableRight="@drawable/ic_baseline_edit_24"
+
+                                        android:gravity="center|start"
+                                        android:showText="true"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </TableRow>
+                    </TableLayout>
+
+                </TableLayout>
+
+
+                    <Button
+                        android:id="@+id/buttonUp2"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/roundconer"
+                        android:text="update"
+                        android:backgroundTint="?colorAccent"
+                        android:textColor="@color/white"
+
+
+                        android:textStyle="bold"
+
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    <!--port 3-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pc3"
+            android:layout_below="@+id/pc2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="15dp"
+
+            app:backgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:drawablePadding="5dp"
+
+                            android:gravity="center"
+                            android:showText="true"
+
+                            android:textAlignment="center"
+                            android:textColor="?colorAccent"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            app:backgroundColor="@color/white"
+                            app:cardCornerRadius="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:drawablePadding="10dp"
+                                    android:gravity="center"
+                                    android:showText="true"
+                                    android:text="Select Days"
+                                    android:textColor="?colorAccent"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"/>
+
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </TableRow>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:stretchColumns="0,1">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                app:backgroundColor="@color/white"
+                                app:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:drawablePadding="10dp"
+
+                                        android:gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:showText="true"
+                                        android:text="Start Time:"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="15dp"
+                                      />
+
+                                    <TextView
+                                        android:id="@+id/startTime3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="15dp"
+                                        android:background="@color/white"
+                                        android:drawableTint="@color/black"
+                                        android:drawableRight="@drawable/ic_baseline_edit_24"
+                                        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                        android:drawablePadding="10dp"
+
+                                        android:gravity="center|start"
+                                        android:showText="true"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                app:backgroundColor="@color/white"
+                                app:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:drawablePadding="10dp"
+
+                                        android:gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:showText="true"
+                                        android:text="Stop Time:"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="15dp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/stopTime3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="15dp"
+                                        android:background="@color/white"
+                                        android:drawableRight="@drawable/ic_baseline_edit_24"
+                                        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                        android:drawablePadding="10dp"
+                                        android:gravity="center|start"
+                                        android:showText="true"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </TableRow>
+                    </TableLayout>
+
+                </TableLayout>
+
+
+                    <Button
+                        android:id="@+id/buttonUp3"
+
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="?colorAccent"
+                        android:textColor="@color/white"
+                        android:background="@drawable/roundconer"
+                        android:text="update"
+
+
+                        android:textStyle="bold"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    <!--port4-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/pc4"
+            android:layout_below="@+id/pc3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="15dp"
+
+            app:backgroundColor="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:stretchColumns="0">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:drawablePadding="5dp"
+
+                            android:gravity="center"
+                            android:showText="true"
+
+                            android:textAlignment="center"
+                            android:textColor="?colorAccent"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            app:backgroundColor="@color/white"
+                            app:cardCornerRadius="15dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:drawablePadding="10dp"
+                                    android:gravity="center"
+                                    android:showText="true"
+                                    android:text="Select Days"
+                                    android:textColor="?colorAccent"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:visibility="gone"/>
+
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                    </TableRow>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:stretchColumns="0,1">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                app:backgroundColor="@color/white"
+                                app:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:drawablePadding="10dp"
+
+                                        android:gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:showText="true"
+                                        android:text="Start Time:"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="15dp"
+                                       />
+
+                                    <TextView
+                                        android:id="@+id/startTime4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="15dp"
+                                        android:background="@color/white"
+                                        android:drawableRight="@drawable/ic_baseline_edit_24"
+                                        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                        android:drawablePadding="10dp"
+
+                                        android:gravity="center|start"
+                                        android:showText="true"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                app:backgroundColor="@color/white"
+                                app:cardCornerRadius="15dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/white"
+                                        android:drawablePadding="10dp"
+
+                                        android:gravity="center"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:showText="true"
+                                        android:text="Stop Time:"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="15dp"
+                                      />
+
+                                    <TextView
+                                        android:id="@+id/stopTime4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_marginTop="20dp"
+                                        android:layout_marginRight="10dp"
+                                        android:layout_marginBottom="15dp"
+                                        android:background="@color/white"
+                                        android:drawableRight="@drawable/ic_baseline_edit_24"
+                                        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+                                        android:drawablePadding="5dp"
+                                        android:gravity="center|start"
+                                        android:showText="true"
+                                        android:textColor="?colorAccent"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </TableRow>
+                    </TableLayout>
+
+                </TableLayout>
+
+
+                    <Button
+                        android:id="@+id/buttonUp4"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="?colorAccent"
+                        android:textColor="@color/white"
+                        android:background="@drawable/roundconer"
+                        android:text="update"
+
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    </ScrollView>

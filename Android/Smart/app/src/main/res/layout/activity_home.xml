@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meganar.smart.HomeActivity"
+
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hii user!"
+        android:textColor="?colorAccent"
+        android:textSize="60dp"
+
+        android:textStyle="bold"
+        tools:ignore="RelativeOverlap,SpUsage">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/add_schedular"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="662dp"
+        android:src="@drawable/ic_baseline_add_clock"
+        app:tint="?colorAccent"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/add1"
+        android:layout_width="wrap_content"
+        android:layout_height="148dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="218dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="384dp"
+        android:background="@drawable/roundconer2"
+        android:backgroundTint="@color/blue"
+        android:drawableLeft="@drawable/light_bulb"
+        android:gravity="center_vertical|start"
+        android:text="@string/add_device"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/add2"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginBottom="385dp"
+        android:background="@drawable/roundconer2"
+        android:backgroundTint="@color/blue"
+        android:drawableLeft="@drawable/switch_on_off_button_icon"
+        android:gravity="center_vertical|start"
+        android:text="auto_on_off"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/home_nav"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:labelVisibilityMode="labeled"
+        tools:ignore="MissingConstraints"
+        app:menu="@menu/bottom_navigation_bar">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+
+    <uses-feature android:name="android.hardware.bluetooth_le" />
+    <uses-feature android:name="android.hardware.bluetooth_le" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.meganar.smart.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_twotone_home_24"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat">
+        <activity
+            android:name="com.meganar.smart.nextActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.nextActivity1"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.PortActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.AdddevicesActivity3"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.AdddevicesActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.portactivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.dummy"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.meganar.smart.ScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.WeatherActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.AddhomeActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.BluetoothActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.EditprofileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.MessageActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.UpdatedeviceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.WifiActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.PasswordResetActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.OtpVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.AdddevicesActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.Smart1Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.LoginscreenActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.SchedularActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.meganar.smart.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.meganar.smart.BluetoothLeService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meganar.smart.SettingsActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="?colorAccent">
+        <ImageView
+            android:id="@+id/settingsback"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/white">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/personal_info_ca1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            app:cardCornerRadius="15sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:paddingVertical="15dp"
+                android:text="Personal information"
+                android:textColor="?colorAccent"
+                android:textStyle="bold"></TextView>
+
+
+            <LinearLayout
+                android:id="@+id/personal_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:id="@+id/cusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="Edit Username"></TextView>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginBottom="10dp"
+                android:text="Change password"></TextView>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/chooseColor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/personal_info_ca1"
+            android:layout_marginTop="10dp"
+            android:onClick="chooseColor"
+            android:textColor="?colorAccent"
+            app:cardCornerRadius="15sp">
+
+            <LinearLayout
+                android:id="@+id/font_size_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Theme settings"
+                    android:textColor="?colorAccent"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/delete_account_ca3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/ch_dev_name"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15sp">
+
+            <LinearLayout
+                android:id="@+id/delete_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingVertical="15dp"
+                    android:text="Delete account"
+                    android:textColor="?colorAccent"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/manage_notify"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/chooseColor"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15sp">
+
+            <LinearLayout
+                android:id="@+id/manage_n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="Orientation">
+
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingVertical="15dp"
+                    android:text="Manage Notification"
+                    android:textColor="?colorAccent"
+                    android:textStyle="bold">
+
+
+                </TextView>
+
+                <Switch
+                    android:id="@+id/switch5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ch_dev_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/manage_notify"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15sp">
+
+            <LinearLayout
+                android:id="@+id/dev_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="Orientation">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:paddingVertical="15dp"
+                    android:text="Update DeviceName"
+                    android:textColor="?colorAccent"
+                    android:textStyle="bold"></TextView>
+
+                <Switch
+                    android:id="@+id/switch7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Switch" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/back_info_ca3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/delete_account_ca3"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="15sp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="Orientation">
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:paddingVertical="15dp"
+                android:text="Exit"
+                android:textColor="?colorAccent"
+                android:textStyle="bold"></TextView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/quit"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="79dp"
+            android:background="@drawable/roundconer"
+
+            android:backgroundTint="?colorAccent"
+            android:gravity="center"
+            android:paddingVertical="15dp"
+            android:text="Logout"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

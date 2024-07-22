@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/purple_500</item>
+        <item name="colorSecondaryVariant">@color/purple_500</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#0C601E</item>
+        <item name="colorPrimaryDark">#0C601E</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">#0C601E</item>
+    </style>
+    <style name="Theme2" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#F10000</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">#F10000</item>
+        <item name="colorAccent">#F10000</item>
+    </style>
+    <style name="Theme3" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#1009DF</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">#0B0FF6</item>
+        <item name="colorAccent">#0509DC</item>
+    </style>
+    <style name="Theme4" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#009688</item>
+        <item name="colorPrimaryDark">#00655C</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">#009688</item>
+    </style>
+    <style name="Theme5" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#575454</item>
+        <item name="colorPrimaryDark">#575454</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorAccent">#575454</item>
+    </style>
+    <style name="Theme6" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#D53300</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">#D53300</item>
+        <item name="colorAccent">#D53300</item>
+    </style>
+    <style name="Theme7" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#C80145</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryDark">#C80145</item>
+        <item name="colorAccent">#C80145</item>
+    </style>
+</resources>

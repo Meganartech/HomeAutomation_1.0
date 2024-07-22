@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meganar.smart.UpdatedeviceActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorAccent"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/update_device_back"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/white">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Device Name"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            app:cardCornerRadius="15dp">
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Port 1"
+                android:textColor="?colorAccent"
+                android:textSize="18dp">
+            </TextView>
+            <EditText
+                android:id="@+id/port1update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Device Name">
+            </EditText>
+            <Button
+                android:id="@+id/setport1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundconer"
+                android:backgroundTint="?colorAccent"
+                android:text="SET">
+            </Button>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/c1"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Port 2"
+                android:textColor="?colorAccent"
+                android:textSize="18dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/port2update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="Enter Device Name">
+            </EditText>
+
+            <Button
+                android:id="@+id/setport2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundconer"
+                android:backgroundTint="?colorAccent"
+                android:text="SET"></Button>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/c2"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="15dp">
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="Port 3"
+                android:textColor="?colorAccent"
+                android:textSize="18dp">
+            </TextView>
+            <EditText
+                android:id="@+id/port3update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Device Name">
+            </EditText>
+
+            <Button
+                android:id="@+id/setport3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/roundconer"
+                android:backgroundTint="?colorAccent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="50dp"
+                android:text="SET">
+            </Button>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/c4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/c3"
+            android:layout_marginTop="4dp"
+            app:cardCornerRadius="20sp">
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Port 4"
+                android:layout_marginTop="5dp"
+                android:textColor="?colorAccent"
+                android:textSize="18dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/port4update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Enter Device Name">
+            </EditText>
+
+            <Button
+                android:id="@+id/setport4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/roundconer"
+                android:backgroundTint="?colorAccent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="50dp"
+                android:text="SET">
+            </Button>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

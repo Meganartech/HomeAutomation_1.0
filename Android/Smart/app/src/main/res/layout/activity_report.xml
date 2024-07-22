@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meganar.smart.ReportActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="?colorAccent">
+
+        <ImageView
+            android:id="@+id/report_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/white">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/i_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/report_issue"
+            android:textColor="@color/white"
+            android:layout_marginLeft="35dp"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:id="@+id/img_rb"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:contentDescription="TODO"
+            android:foregroundGravity="center_horizontal"
+            android:src="@drawable/ic_baseline_search_24"
+            app:tint="#575454"></ImageView>
+
+        <ImageView
+
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="42dp"
+            android:drawableTint="?colorAccent"
+            android:foregroundGravity="center_horizontal"
+            android:src="@drawable/ic_baseline_bug_report_24"
+            app:tint="?colorAccent">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/si_ri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_rb"
+            android:layout_marginLeft="10dp"
+            android:gravity="start"
+            android:text="@string/select_issue"
+            android:textColor="?colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+            android:id="@+id/spinnerQuestionsOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/si_ri"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="?colorAccent"
+            app:smsp_arrowColor="@color/black"
+            app:smsp_highlightColor="@color/black"
+            app:smsp_hintSize="18sp"
+            app:smsp_itemColor="@color/black"
+            app:smsp_itemListBackgroundColor="@color/white"
+            app:smsp_itemListColor="@color/black"
+            app:smsp_itemListHintBackgroundColor="@color/white"
+            app:smsp_itemSize="22sp"
+            app:smsp_selectedItemListColor="@color/cardview_dark_background" />
+
+        <EditText
+            android:id="@+id/prob_sugg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spinnerQuestionsOptions"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:autofillHints=""
+            android:backgroundTint="@color/white"
+            android:gravity="top|left"
+            android:hint="@string/problem_suggestion"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:padding="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:scrollbars="vertical"
+            android:shadowColor="@color/black"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prob_sugg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="101dp">
+
+            <Button
+                android:id="@+id/report_btn"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="160dp"
+                android:background="@drawable/roundconer"
+                android:backgroundTint="?colorAccent"
+
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ProgressBar
+
+                android:id="@+id/pro"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/report_btn"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="172dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

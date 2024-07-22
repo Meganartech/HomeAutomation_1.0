@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meganar.smart.portactivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/adddevback"
+
+        android:layout_width="25dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:tint="?colorAccent">
+
+    </ImageView>
+
+
+    <TextView
+        android:id="@+id/display_title"
+        android:layout_width="257dp"
+        android:layout_height="79dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="104dp"
+        android:text="hii dinesh!"
+        android:textColor="?colorAccent"
+        android:textSize="50dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/add_schedular"
+        android:layout_width="78dp"
+        android:layout_height="65dp"
+
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/user_male_icon"
+        app:tint="?colorAccent"
+        tools:ignore="ContentDescription"
+        tools:layout_editor_absoluteX="334dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="132dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="490dp"
+        android:background="@drawable/roundconer2"
+        android:backgroundTint="?colorAccent"
+
+
+        android:text="kitchen" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="133dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="315dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="282dp"
+        android:background="@drawable/roundconer2"
+        android:backgroundTint="?colorAccent"
+
+        android:text="hall" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="152dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="549dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/roundconer2"
+        android:backgroundTint="?colorAccent"
+        android:text="room" />
+
+
+</RelativeLayout>

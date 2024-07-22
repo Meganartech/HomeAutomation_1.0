@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meganar.smart.EditprofileActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="?colorAccent">
+
+        <ImageView
+            android:id="@+id/editback"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/white">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/i_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:text="Edit Profile"
+
+
+
+            android:textColor="@color/white"
+            android:layout_marginLeft="35dp"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+     <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="16dp"
+           android:layout_marginTop="80dp">
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginTop="80dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="6dp"
+
+                        android:drawablePadding="10dp"
+
+                        android:gravity="center"
+                        android:showText="true"
+                        android:text="Name:"
+                        android:textAlignment="center"
+                        android:textColor="?colorAccent"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/ed_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="?colorAccent"
+                        android:drawablePadding="10dp"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:drawableEnd="@drawable/ic_baseline_edit_24"
+
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"
+                        android:showText="true"
+                        android:text="Email:"
+                        android:textAlignment="center"
+                        android:textColor="?colorAccent"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/ed_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:drawablePadding="10dp"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:text="wel"
+                        android:textColor="?colorAccent"
+                        android:textSize="17dp" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/BEDemail"
+
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="UPDATE"
+                    android:backgroundTint="?colorAccent"
+                    android:textColor="@color/white"
+                    android:background="@drawable/roundconer"
+                    android:layout_marginTop="25dp"
+
+
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                   />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

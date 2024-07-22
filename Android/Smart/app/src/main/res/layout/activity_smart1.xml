@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.meganar.smart.Smart1Activity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/display_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hii dinesh!"
+        android:textColor="?colorAccent"
+        android:textSize="50dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/add_schedular"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginBottom="672dp"
+        android:src="@drawable/user_male_icon"
+        app:tint="?colorAccent"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/wifi"
+        android:layout_width="187dp"
+        android:layout_height="143dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/roundconer2"
+        android:backgroundTint="?colorAccent"
+        android:drawableLeft="@drawable/ic_baseline_wifi2"
+        android:text="Enable wifi"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/bluetooth"
+        android:layout_width="190dp"
+        android:layout_height="142dp"
+        android:layout_below="@id/wifi"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-143dp"
+        android:layout_marginEnd="6dp"
+        android:background="@drawable/roundconer2"
+        android:backgroundTint="?colorAccent"
+        android:text="enable bluetooth"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/bluetooth_svgrepo_com"
+
+        android:visibility="visible" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/sma_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+        app:labelVisibilityMode="labeled"
+        tools:ignore="MissingConstraints"
+        app:menu="@menu/bottom_navigation_bar">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</RelativeLayout>
