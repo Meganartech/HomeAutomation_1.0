@@ -31,7 +31,7 @@ local.properties
 *.ipr
 *.iws
 
-# IntelliJ IDEA
+# IntelliJ IDEA.
 .idea/
 *.iws
 *.iml
